@@ -1,0 +1,115 @@
+2. PrzeprowadŸ eksperymenty, w których zmieniasz prawdopodobieñstwo
+mutacji. SprawdŸ, jak ró¿ne wartoœci prawdopodobieñstwa mutacji wp³y-
+waj¹ na konwergencjê algorytmu oraz jakoœæ rozwi¹zañ. Spróbuj zna-
+leŸæ optymalne ustawienie
+
+
+
+
+
+Dane:
+population_size = 100
+
+chromosome_length = 5  
+
+generations = 10
+
+mutation_prob = 0.01
+
+Wynik:
+Generation 1: Best = 11111, f(x) = 961
+Generation 2: Best = 11111, f(x) = 961
+Generation 3: Best = 11111, f(x) = 961
+Generation 4: Best = 11111, f(x) = 961
+Generation 5: Best = 11111, f(x) = 961
+Generation 6: Best = 11111, f(x) = 961
+Generation 7: Best = 11111, f(x) = 961
+Generation 8: Best = 11111, f(x) = 961
+Generation 9: Best = 11111, f(x) = 961
+Generation 10: Best = 11111, f(x) = 961
+Best solution: x = 31, f(x) = 961
+
+
+
+@@@@@@
+
+
+population_size = 100
+
+chromosome_length = 5  
+
+generations = 10
+
+mutation_prob = 0.1
+
+Wynik:
+Generation 1: Best = 11111, f(x) = 961
+Generation 2: Best = 11111, f(x) = 961
+Generation 3: Best = 11111, f(x) = 961
+Generation 4: Best = 11111, f(x) = 961
+Generation 5: Best = 11111, f(x) = 961
+Generation 6: Best = 11111, f(x) = 961
+Generation 7: Best = 11111, f(x) = 961
+Generation 8: Best = 11111, f(x) = 961
+Generation 9: Best = 11111, f(x) = 961
+Generation 10: Best = 11111, f(x) = 961
+Best solution: x = 31, f(x) = 961
+
+
+@@@@@@@@@@
+
+population_size = 100
+
+chromosome_length = 5  
+
+generations = 10
+
+mutation_prob = 0.5
+
+Generation 1: Best = 11111, f(x) = 961
+Generation 2: Best = 11111, f(x) = 961
+Generation 3: Best = 11111, f(x) = 961
+Generation 4: Best = 11111, f(x) = 961
+Generation 5: Best = 11111, f(x) = 961
+Generation 6: Best = 11111, f(x) = 961
+Generation 7: Best = 11111, f(x) = 961
+Generation 8: Best = 11111, f(x) = 961
+Generation 9: Best = 11111, f(x) = 961
+Generation 10: Best = 11111, f(x) = 961
+Best solution: x = 31, f(x) = 961
+
+
+
+
+@@@@@@@@@@@@@@
+Dane:
+population_size = 100
+
+chromosome_length = 5  
+
+generations = 10
+
+mutation_prob = 0.56
+
+
+Wynik:
+Generation 1: Best = 11111, f(x) = 961
+Generation 2: Best = 11111, f(x) = 961
+Generation 3: Best = 11111, f(x) = 961
+Generation 4: Best = 11111, f(x) = 961
+Generation 5: Best = 11110, f(x) = 900
+Generation 6: Best = 11111, f(x) = 961
+Generation 7: Best = 11111, f(x) = 961
+Generation 8: Best = 11111, f(x) = 961
+Generation 9: Best = 11111, f(x) = 961
+Generation 10: Best = 11111, f(x) = 961
+Best solution: x = 31, f(x) = 961
+
+
+
+Reasumuj¹c wszystkie aspekty kwintesencji tematu dochodzê do fundamentalnej konkluzji:
+przy populacji 100 konwergencjê algorytmu oraz jakoœæ rozwi¹zañ optymalnie wystêpuje przy 
+mutacji wynosz¹cej 0.56. Wyniki wtedy zmieniaj¹ siê praktycznie nigdy myœle ¿e to bardzo optymalne.
+
+
+
