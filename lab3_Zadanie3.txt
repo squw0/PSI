@@ -1,7 +1,0 @@
-Lokalne optimum algorttmu przy niskich wartosciach populacji wystepuje przy kazdym uruchaniu programu.
-
-Poniewa¿ przy du¿ej populacji, b¹dz du¿ej iloœci prób wynik jest niezauwa¿alny lub nierozró¿nialny 
-natomiast przy ma³ej populacji (np 2) zmiany s¹ zauwa¿alne go³ym okiem. Bardzo elegancko.
-
-
- Essa, Rizz, Sigma, Skibidi
