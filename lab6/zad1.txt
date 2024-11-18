@@ -1,0 +1,8 @@
+ zad1. 
+Przeprowadź eksperymenty z różnymi parametrami funkcji przynależności (np. szerokością i centrum) 
+dla zbiorów rozmytych ”niski”, ”średni” i ”wysoki” poziomu brudu 
+oraz ”krótki”, ”średni” i ”długi” czasu prania. 
+
+Obserwuj, jak zmiany w tych parametrach wpływają na wniosko
+wanie i zalecany czas prania.
+
