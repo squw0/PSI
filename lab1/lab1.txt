@@ -1,0 +1,83 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Podstawy Programowania w Sztucznej Inteligencji – LAB1
+
+/////
+
+Opis Algorytmów
+
+Zadanie 1:
+Algorytm generuje listę liczb całkowitych od 0 do 200.
+
+Każda liczba jest zwiększana o 6, a następnie lista jest odwracana.
+
+
+Zadanie 2:
+Algorytm tworzy 100-elementową tablicę losowych zer i jedynek.
+
+Zera są zastępowane wartością False, a jedynki True.
+
+
+Zadanie 3:
+Algorytm generuje listę liczb całkowitych od 100 do 200.
+
+Lista jest dzielona na dwie części po 25 elementów, dla których obliczana jest średnia.
+
+
+Zadanie 4:
+Algorytm generuje dane zgodne z rozkładem normalnym (średnia 0, odchylenie standardowe 1).
+
+Dane są wizualizowane na wykresie gęstości.
+
+
+Zadanie 5:
+Algorytm rysuje wykres funkcji sześciennej .
+
+Generuje wartości funkcji dla przedziału .
+
+
+Zadanie 6:
+Algorytm łączy dwie listy w jedną poprzez naprzemienne dodawanie elementów z obu list.
+
+/////
+
+Zestawienie Wyników
+
+Zadanie 1:
+Wynikowa lista: [206, 205, ..., 6].
+
+Elementy zostały poprawnie odwrócone.
+
+
+Zadanie 2:
+Przykład wynikowej tablicy: [True, False, True, ..., False].
+
+Rozkład zer i jedynek losowy.
+
+
+Zadanie 3:
+Pierwsza lista: [100, 101, ..., 124]. Średnia: 112.
+
+Druga lista: [125, 126, ..., 149]. Średnia: 137.
+
+
+Zadanie 4:
+Wygenerowano histogram gęstości rozkładu normalnego. (Plik: density_plot.png)
+
+
+Zadanie 5:
+Wygenerowano wykres funkcji . (Plik: cubic_function.png)
+
+
+Zadanie 6:
+Wynik dla list [1, 3, 5] i [2, 4, 6]: [1, 2, 3, 4, 5, 6].
+
+/////
+
+Wnioski Końcowe
+Algorytmy działają zgodnie z założeniami i wykonują poprawne operacje na danych.
+
+Wykresy pozwalają wizualizować wyniki obliczeń matematycznych i statystycznych.
+
+Operacje na listach i tablicach są kluczowe dla dalszego programowania w AI.
+
