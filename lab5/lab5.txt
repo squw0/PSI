@@ -1,0 +1,79 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Aproksymacja funkcji jednej zmiennej z wykorzystaniem systemów rozmytych – Lab 5
+
+////
+
+Opis Algorytmu
+
+Cel projektu:Celem laboratorium było zaprojektowanie systemu rozmytego służącego do aproksymacji funkcji sinusoidalnej i analizowanie jego działania w zależności od liczby reguł, parametrów funkcji przynależności oraz typów funkcji przynależności.
+
+Kroki realizacji:
+
+Zdefiniowano funkcje przynależności:
+
+Trójkątne (trimf)
+
+Trapezoidalne (trapezoidal)
+
+Gaussowskie (gaussmf)
+
+
+Zaimplementowano różne eksperymenty:
+
+Wpływ liczby reguł na aproksymację.
+
+Optymalizację aproksymacji z użyciem operacji wektorowych NumPy.
+
+Dodanie nowej kategorii "Bardzo duże odchylenie" i uwzględnienie jej w aproksymacji.
+
+Eksperymentowanie ze zmianą parametrów funkcji przynależności.
+
+Porównanie różnych typów funkcji przynależności (trapezoidalne i gaussowskie).
+
+Wizualizacja wyników:Każdy eksperyment został zilustrowany na wykresach pokazujących rzeczywistą funkcję sinusoidalną oraz aproksymowaną funkcję.
+
+////
+
+Zestawienie Wyników
+
+Zadanie 1: Zmiana liczby reguł
+Większa liczba reguł poprawia dokładność aproksymacji, szczególnie w obszarach granicznych funkcji sinusoidalnej.
+
+W przypadku 3 reguł aproksymacja była zgrubna, ale efektywna w środku zakresu.
+
+
+Zadanie 2: Optymalizacja z użyciem NumPy
+Optymalizacja znacząco przyspieszyła obliczenia, eliminując konieczność iteracyjnych pętli.
+
+Wyniki aproksymacji były identyczne z implementacją pętli, co potwierdza poprawność optymalizacji.
+
+
+Zadanie 3: Dodanie nowej kategorii "Bardzo duże odchylenie"
+Nowa kategoria umożliwiła lepsze przybliżenie funkcji w obszarach o ekstremalnych wartościach (np. w pobliżu ).
+
+Zwiększyła precyzję aproksymacji w obszarach rzadko uwzględnianych przez inne kategorie.
+
+
+Zadanie 4: Eksperymentowanie ze zmianą parametrów
+Szersze funkcje przynależności powodowały bardziej ogólne aproksymacje z gładkimi przejściami, ale z mniejszą dokładnością lokalną.
+
+Węższe funkcje przynależności dawały większą precyzję kosztem nagłych zmian w wynikach aproksymacji.
+
+
+Zadanie 5: Porównanie różnych funkcji przynależności
+Funkcje trapezoidalne pozwalały na szersze pokrycie zakresu, co prowadziło do bardziej ogólnych aproksymacji.
+
+Funkcje gaussowskie zapewniały gładkie przejścia między kategoriami, co skutkowało estetycznymi, choć czasem mniej dokładnymi aproksymacjami w obszarach granicznych.
+
+////
+
+Wnioski Końcowe
+
+Liczba reguł:Większa liczba reguł poprawia jakość aproksymacji, szczególnie na granicach, ale zwiększa złożoność obliczeniową.
+
+Optymalizacja:Zastosowanie operacji wektorowych NumPy znacząco przyspiesza obliczenia przy zachowaniu tej samej jakości wyników.
+
+Dodanie nowych kategorii:Nowe kategorie, takie jak "Bardzo duże odchylenie," poprawiają precyzję aproksymacji w obszarach skrajnych funkcji.
+
+Typy funkcji przynależności:Funkcje gaussowskie i trapezoidalne oferują różne zalety: gaussowskie dla gładkości, trapezoidalne dla szerokiego pokrycia zakresu.
