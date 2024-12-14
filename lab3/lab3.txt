@@ -1,0 +1,76 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Analiza działania algorytmów optymalizacji genetycznej – Lab 3
+
+////
+
+Opis Algorytmów
+
+Eksperymenty z algorytmem genetycznym:
+
+Wykorzystano dostarczony algorytm genetyczny z modyfikacjami do przeprowadzenia eksperymentów.
+
+Dla każdego eksperymentu badano wpływ parametrów algorytmu (rozmiar populacji, prawdopodobieństwo mutacji, liczba pokoleń) na jego działanie.
+
+Funkcja przystosowania: , dla problemu optymalizacji liniowej: .
+
+Główne kroki algorytmu obejmują: selekcję, krzyżowanie i mutację.
+
+////
+
+Zestawienie Wyników
+
+Eksperyment 1: Zmiana parametrów (rozmiar populacji, mutacja, krzyżowanie)
+Wyniki dla różnych kombinacji parametrów:
+
+Pop=5, Mut=0.01, Cross=0.8: .
+
+Pop=10, Mut=0.05, Cross=1.0: .
+
+Pop=20, Mut=0.1, Cross=0.6: .
+
+Zwiększenie populacji i prawdopodobieństwa krzyżowania poprawiło wyniki.
+
+
+Eksperyment 2: Wpływ prawdopodobieństwa mutacji
+Przy mutacji 0.001: stabilna, wolna konwergencja.
+
+Przy mutacji 0.01: szybka konwergencja z dobrymi wynikami.
+
+Przy mutacji 0.2: wprowadzała nadmiar losowości, prowadząc do niestabilnych wyników.
+
+
+Eksperyment 3: Mały rozmiar populacji
+Populacja 2: Algorytm szybko wpadał w lokalne optimum.
+
+Najlepszy wynik: .
+
+Wniosek: Różnorodność populacji jest kluczowa dla skuteczności algorytmu.
+
+
+Eksperyment 4: Liczba pokoleń
+Wyniki dla różnych pokoleń:
+
+10 pokoleń: .
+
+50 pokoleń: .
+
+100 pokoleń: Bez poprawy po 50 pokoleniach, stabilizacja wyniku.
+
+Więcej pokoleń nie zawsze poprawia wynik, gdy algorytm osiągnie optymalność.
+
+
+Eksperyment 5: Optymalizacja funkcji liniowej 
+Algorytm skutecznie znalazł maksimum: .
+
+Wynik wskazuje na efektywność algorytmu w problemach liniowych.
+
+////
+
+Wnioski Końcowe
+
+Algorytmy genetyczne są skuteczne w optymalizacji nieliniowej i liniowej, ale wymagają odpowiedniego dostrojenia parametrów.
+
+Różnorodność populacji i odpowiednie prawdopodobieństwo mutacji mają kluczowe znaczenie dla unikania pułapek lokalnych ekstremów.
+
+Więcej pokoleń nie zawsze poprawia wynik, jeśli algorytm osiągnie stabilizację w początkowych iteracjach.
