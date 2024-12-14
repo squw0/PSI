@@ -1,0 +1,67 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Algorytm genetyczny – Lab 2
+
+///
+
+Opis Algorytmów
+
+Zadanie 1:
+Algorytm genetyczny został wykorzystany do maksymalizacji funkcji  w zakresie .
+
+Zastosowano binarną reprezentację chromosomów, krzyżowanie jednopunktowe oraz mutację.
+
+
+Zadanie 2:
+Algorytm genetyczny został zastosowany do rozwiązania problemu plecakowego.
+
+Przedmioty mają określone wagi i wartości. Celem jest maksymalizacja wartości bez przekraczania dopuszczalnej wagi.
+
+
+Zadanie 3:
+Porównano efektywność algorytmu z krzyżowaniem jednopunktowym i dwupunktowym.
+
+Oba podejścia testowano na problemie maksymalizacji funkcji kwadratowej.
+
+
+Zadanie 4:
+Algorytm genetyczny został wykorzystany do znajdowania przybliżonych rozwiązań równania nieliniowego .
+
+///
+
+Zestawienie Wyników
+
+Zadanie 1:
+Najlepszy wynik: , .
+
+Algorytm skutecznie zbliżył się do maksymalnej wartości funkcji.
+
+
+Zadanie 2:
+Najlepsze rozwiązanie: [0, 1, 1, 0].
+
+Wartość plecaka: 9 (przedmioty o wagach 3, 4 i wartościach 4, 5).
+
+
+Zadanie 3:
+Wyniki krzyżowania jednopunktowego: , .
+
+Wyniki krzyżowania dwupunktowego: , .
+
+Krzyżowanie dwupunktowe dało lepsze rezultaty w tym eksperymencie.
+
+
+Zadanie 4:
+Przybliżone rozwiązanie równania: , wartość fitness: .
+
+Algorytm skutecznie znalazł rozwiązanie w zadanym zakresie.
+
+///
+
+Wnioski Końcowe
+
+Algorytmy genetyczne są skuteczne w rozwiązywaniu problemów optymalizacyjnych, takich jak maksymalizacja funkcji czy problem plecakowy.
+
+Wybór odpowiedniego operatora krzyżowania (jedno- lub dwupunktowego) wpływa na efektywność i dokładność algorytmu.
+
+Algorytmy genetyczne mogą być stosowane do rozwiązywania równań nieliniowych, choć precyzja zależy od ustawień algorytmu.
