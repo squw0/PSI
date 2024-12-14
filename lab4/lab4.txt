@@ -1,0 +1,111 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Projektowanie systemów Mamdaniego i Sugeno – Lab 4
+
+////
+
+Opis Algorytmu
+
+Cel projektu:
+Stworzenie systemu sterowania klimatyzacją samochodową, który dostosowuje siłę wentylacji oraz ustawienie temperatury na podstawie:
+
+Temperatura zewnętrzna (external_temp)
+
+Temperatura wewnętrzna (interior_temp)
+
+////
+
+Kroki realizacji:
+
+Zdefiniowano zmienne rozmyte:
+
+Wejściowe: "Temperatura zewnętrzna" i "Temperatura wewnętrzna".
+
+Wyjściowe: "Siła wentylacji" i "Ustawienie temperatury".
+
+Określono funkcje przynależności dla zmiennych rozmytych:
+
+Temperatura zewnętrzna: "zimno", "umiarkowanie", "gorąco".
+
+Temperatura wewnętrzna: "niska", "komfortowa", "wysoka".
+
+Siła wentylacji: "niska", "średnia", "wysoka".
+
+Ustawienie temperatury: "chłodno", "umiarkowanie", "ciepło".
+
+Stworzono reguły sterujące:
+
+Przykład: Jeżeli "Temperatura zewnętrzna" jest "zimno" i "Temperatura wewnętrzna" jest "niska", wtedy "Siła wentylacji" jest "niska" i "Ustawienie temperatury" jest "ciepło".
+
+Wdrożono wnioskowanie rozmyte z wykorzystaniem bibliotek skfuzzy oraz obliczenia wartości defuzzifikacji.
+
+Przetestowano system dla różnych scenariuszy.
+
+////
+
+Zestawienie Wyników
+
+Scenariusze testowe:
+
+Scenariusz 1:
+Temperatura zewnętrzna: -5
+
+Temperatura wewnętrzna: 15
+
+Siła wentylacji: 1.67
+
+Ustawienie temperatury: 29.00
+
+
+Scenariusz 2:
+Temperatura zewnętrzna: 20
+
+Temperatura wewnętrzna: 22
+
+Siła wentylacji: 5.00
+
+Ustawienie temperatury: 24.00
+
+
+Scenariusz 3:
+Temperatura zewnętrzna: 35
+
+Temperatura wewnętrzna: 28
+
+Siła wentylacji: 9.00
+
+Ustawienie temperatury: 18.33
+
+
+Scenariusz 4:
+Temperatura zewnętrzna: 10
+
+Temperatura wewnętrzna: 18
+
+Siła wentylacji: 4.00
+
+Ustawienie temperatury: 26.00
+
+
+Scenariusz 5:
+Temperatura zewnętrzna: 45
+
+Temperatura wewnętrzna: 25
+
+Siła wentylacji: 9.33
+
+Ustawienie temperatury: 18.00
+
+Wizualizacja funkcji przynależności:
+Wszystkie funkcje przynależności zostały przedstawione na wykresach i odzwierciedlają rozmytą charakterystykę zmiennych wejściowych i wyjściowych.
+
+////
+
+Wnioski Końcowe
+
+System sterowania klimatyzacją działa zgodnie z założeniami, dostosowując ustawienia na podstawie reguł rozmytych.
+
+Wartości defuzzifikacji zapewniają spójne wyjścia numeryczne dla zmiennych wyjściowych (siła wentylacji i ustawienie temperatury).
+
+Zmienne rozmyte i reguły zostały skutecznie zastosowane w celu modelowania nieliniowego systemu sterowania.
+
