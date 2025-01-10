@@ -1,0 +1,178 @@
+EJAJA NOTATKA UWU
+
+
+
+#### CZĘŚĆ PISEMNA
+
+
+
+##### Sekcja 1: Podstawy AI
+
+- **Czym jest sztuczna inteligencja (AI)?**
+  - Sztuczna inteligencja to dziedzina informatyki zajmująca się tworzeniem systemów komputerowych, które naśladują zdolności poznawcze człowieka, takie jak rozumowanie, uczenie się, adaptacja czy podejmowanie decyzji. Jest to interdyscyplinarna dziedzina łącząca elementy matematyki, statystyki, informatyki oraz nauk kognitywnych.
+
+- **Główne cele AI:**
+  - Automatyzacja procesów.
+  - Rozwiązywanie problemów trudnych lub niemożliwych do rozwiązania tradycyjnymi metodami.
+  - Wsparcie lub zastąpienie pracy ludzkiej w określonych dziedzinach.
+
+- **Podstawowe komponenty AI:**
+  - Algorytmy: Serce każdego systemu AI, definiujące sposób przetwarzania danych i rozwiązywania problemów.
+  - Dane: Kluczowe źródło wiedzy dla systemów AI; jakość danych ma ogromny wpływ na skuteczność modeli.
+  - Zasoby obliczeniowe: Wykorzystanie nowoczesnych procesorów (np. GPU) oraz platform chmurowych.
+
+- **Historia AI:**
+  - **1950:** Alan Turing publikuje pracę "Computing Machinery and Intelligence".
+  - **1956:** Konferencja w Dartmouth uznana za narodziny AI jako dziedziny nauki.
+  - **1980s:** Powstanie systemów ekspertowych.
+  - **2010+:** Dynamiczny rozwój dzięki głębokiemu uczeniu i wzrostowi mocy obliczeniowej.
+
+
+
+##### Sekcja 2: Kluczowe koncepcje
+
+1. **Test Turinga:**
+   - **Definicja:** Propozycja Alana Turinga, która określa, czy maszyna potrafi wykazywać zachowanie nierozróżnialne od człowieka.
+   - **Jak działa?** Człowiek komunikuje się za pomocą tekstu z maszyną i innym człowiekiem. Jeśli nie jest w stanie odróżnić, która strona to maszyna, test uznaje się za zdany.
+   - **Znaczenie:** Test wprowadził podstawowe pytania o definicję inteligencji maszynowej.
+
+
+
+2. **Uczenie maszynowe (Machine Learning, ML):**
+
+   - **Definicja:** Gałąź AI, której celem jest rozwijanie algorytmów zdolnych do uczenia się na podstawie danych.
+
+   - **Proces:**
+     - Zbieranie danych.
+     - Przygotowanie danych (oczyszczanie, transformacja).
+     - Trening modelu na danych treningowych.
+     - Ocena modelu na danych testowych.
+     - Udoskonalanie modelu.
+
+   - **Zastosowania:**
+     - Analiza predykcyjna.
+     - Rozpoznawanie obrazów.
+     - Systemy rekomendacji (np. Netflix, Amazon).
+
+
+
+3. **Głębokie uczenie (Deep Learning, DL):**
+
+   - **Definicja:** Poddziedzina uczenia maszynowego oparta na wielowarstwowych sieciach neuronowych.
+
+   - **Jak działa?**
+     - Warstwy neuronowe przetwarzają dane na różnych poziomach abstrakcji.
+     - Używane są techniki optymalizacji i duże zbiory danych.
+
+   - **Przykłady zastosowań:**
+     - Samochody autonomiczne.
+     - Przetwarzanie języka naturalnego (np. ChatGPT).
+     - Generowanie obrazów.
+
+
+
+4. **AI a IT Science:**
+
+   - **Kolokacje:**
+     - AI jako część IT zajmuje się analizą, modelowaniem i przewidywaniem wzorców danych.
+
+   - **Różnice:**
+     - AI koncentruje się na inteligencji i autonomii systemów.
+     - IT Science obejmuje szersze obszary, w tym sieci komputerowe, bazy danych i zarządzanie systemami.
+
+
+
+5. **AutoML, TML, OML:**
+
+   - **AutoML:** Automatyzacja procesów budowania modeli AI, obejmująca wybór algorytmu, hiperparametrów i ewaluację.
+
+   - **TML:** Tradycyjne podejście do ML, wymagające ręcznego projektowania funkcji i modeli.
+
+   - **OML:** Metody uczenia się w czasie rzeczywistym na podstawie danych przychodzących na bieżąco.
+
+
+
+6. **Klasyfikacja metod AI:**
+
+   - **Supervised Learning (uczenie nadzorowane):**
+     - Model uczony na oznaczonych danych.
+     - Przykład: Klasyfikacja e-maili na spam i nie-spam.
+
+   - **Unsupervised Learning (uczenie bez nadzoru):**
+     - Analiza danych bez etykiet (np. klasteryzacja).
+     - Przykład: Grupowanie klientów według preferencji zakupowych.
+
+   - **Reinforcement Learning (uczenie przez wzmocnienie):**
+     - System uczy się poprzez interakcję ze środowiskiem i maksymalizację zysku.
+     - Przykład: Algorytmy w grach komputerowych.
+
+
+
+7. **Zastosowania metod AI:**
+
+   - **Medycyna:** Diagnostyka, analiza obrazów, personalizacja terapii.
+
+   - **Finanse:** Wykrywanie oszustw, ocena ryzyka kredytowego.
+
+   - **Handel:** Systemy rekomendacji, prognozy popytu.
+
+   - **Logistyka:** Optymalizacja tras, zarządzanie magazynami.
+
+
+
+
+
+
+##### Sekcja 3: Ustna dyskusja
+
+1. **Model Lotki-Volterry (drapieżników i ofiar):**
+
+   - **Opis:**
+     - Model matematyczny opisujący dynamikę populacji drapieżników i ofiar.
+     - Równania różniczkowe pokazują zależności między populacjami.
+
+   - **Przykład w AI:** Optymalizacja w systemach wieloagentowych.
+
+
+2. **Zbiory rozmyte typu 1:**
+
+   - **Definicja:**
+     - Zbiory pozwalające na opisywanie nieprecyzyjnych informacji za pomocą funkcji przynależności.
+
+   - **Zastosowania:**
+     - Sterowanie w automatyce (np. sterowniki klimatyzacji).
+     - Modele decyzyjne w medycynie.
+
+
+
+3. **Projektowanie sterowników rozmytych:**
+
+   - Etapy:
+     - Definicja zmiennych wejściowych i wyjściowych.
+     - Tworzenie funkcji przynależności.
+     - Projektowanie reguł sterowania.
+
+   - **Zastosowanie:**
+     - Regulacja temperatury.
+     - Kontrola ruchu robotów.
+
+
+4. **Nagrody Nobla w AI:**
+   - Były dwie nagrody i super :)
+
+
+
+5. **Systemy ekspertowe:**
+
+   - **Opis:** Systemy oparte na regułach, które symulują proces podejmowania decyzji przez ekspertów w danej dziedzinie.
+
+   - **Elementy:**
+     - Baza wiedzy: Fakty i reguły eksperckie.
+     - Mechanizm wnioskowania: Logika dedukcyjna lub indukcyjna.
+     - Interfejs użytkownika: Umożliwia interakcję.
+
+   - **Przykłady:**
+     - Diagnostyka medyczna (np. MYCIN).
+     - Systemy doradcze w finansach.
+
+
