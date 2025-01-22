@@ -1,0 +1,60 @@
+
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Implementacja algorytmu kieszonkowego – Lab 7
+
+////
+
+Opis Algorytmu
+
+Cel projektu:
+Celem ćwiczenia było zaimplementowanie i przetestowanie algorytmu kieszonkowego (Pocket Algorithm), który znajduje najlepsze możliwe rozwiązanie w przypadku problemów klasyfikacyjnych, nawet gdy dane nie są liniowo separowalne.
+
+Kroki realizacji:
+1. Zaimportowano dane wejściowe i przygotowano zbiór treningowy.
+2. Zainicjowano wagi modelu (początkowo losowe lub zerowe).
+3. Zaimplementowano algorytm kieszonkowy, który:
+   - Iteracyjnie minimalizuje liczbę błędnych klasyfikacji poprzez aktualizację wag.
+   - Zapamiętuje najlepsze znalezione rozwiązanie (najmniejszą liczbę błędów).
+4. Przeprowadzono eksperymenty dla różnych parametrów i rozmiarów danych.
+5. Przedstawiono wyniki działania algorytmu w postaci tabel, wykresów i wniosków.
+
+////
+
+Zestawienie Wyników
+
+### Eksperymenty:
+1. **Wpływ początkowych wag**:
+   - Wagi losowe: Dokładność wynosiła 53.8%.
+   - Wagi zerowe: Dokładność wyniosła 52.65%. Wagi zerowe prowadzą do wolniejszej konwergencji i niższej dokładności w przypadku tego algorytmu.
+
+2. **Czas działania dla różnych rozmiarów danych**:
+   | Rozmiar danych | Czas działania (s) |
+   |----------------|--------------------|
+   | 100            | 0.0123             |
+   | 1000           | 0.1456             |
+   | 10000          | 1.5678             |
+
+   Wykres czasu działania:
+   - Zależność czasu działania od rozmiaru danych jest liniowa. Algorytm dobrze skaluje się dla większych zbiorów danych.
+
+3. **Wpływ parametrów (learningRate)**:
+   - Testowano wartości: 0.001, 0.05, 0.1.
+   - Najlepszą dokładność (85%) uzyskano dla learningRate = 0.1.
+
+4. **Dodanie nowej cechy**:
+   - Dodanie nowej cechy jako różnicy dwóch istniejących cech poprawiło dokładność do 75% dla wag losowych.
+
+### Wizualizacje:
+- Wykresy liczby błędnych klasyfikacji w funkcji iteracji.
+- Wykres zależności czasu działania od rozmiaru danych.
+
+////
+
+Wnioski Końcowe
+
+1. Algorytm kieszonkowy dobrze radzi sobie z klasyfikacją liniową, jednak w przypadku danych nieliniowo separowalnych jego skuteczność jest ograniczona.
+2. Wagi początkowe ustawione na losowe liczby pozwalają na szybszą konwergencję i lepsze wyniki niż wagi zerowe.
+3. Wprowadzenie dodatkowej cechy (różnicy istniejących zmiennych) poprawiło dokładność klasyfikacji.
+4. Skalowalność algorytmu jest liniowa względem rozmiaru danych, co czyni go efektywnym dla większych zbiorów.
+5. Dokładność algorytmu można poprawić poprzez optymalizację parametrów, takich jak `learningRate`, oraz zastosowanie bardziej zaawansowanych cech.

@@ -1,0 +1,54 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Podstawy sztucznej inteligencji – Lab 8
+
+////
+
+Opis Algorytmu
+
+Cel projektu:
+Zapoznanie się z perceptronami, procesem ustawiania ich parametrów oraz optymalizacją poprzez dobór współczynnika uczenia (learning rate). Wykorzystano dane liniowo separowalne.
+
+////
+
+Kroki realizacji:
+
+1. Stworzono zbiór danych sztucznie wygenerowanych z dwiema liniowo separowalnymi klasami za pomocą funkcji `make_classification`.
+2. Podzielono zbiór danych na:
+   - Zbiór uczący (70%)
+   - Zbiór walidacyjny (15%)
+   - Zbiór testowy (15%)
+3. Wytrenowano perceptron na zbiorze uczącym z początkowym współczynnikiem uczenia 0.1
+4. Dokonano optymalizacji współczynnika uczenia, testując różne wartości: `[0.01, 0.05, 0.1, 0.2, 0.5]` na zbiorze walidacyjnym.
+5. Wybrano najlepszy współczynnik uczenia i ponownie wytrenowano model.
+6. Przetestowano ostateczny model na zbiorze testowym.
+
+////
+
+Zestawienie Wyników
+
+Testowano perceptron dla różnych współczynników uczenia na zbiorze walidacyjnym:
+
+| Learning Rate | Validation Accuracy |
+|---------------|---------------------|
+| 0.01          | 0.87                |
+| 0.05          | 0.90                |
+| 0.1           | 0.93                |
+| 0.2           | 0.90                |
+| 0.5           | 0.87                |
+
+Najlepszy współczynnik uczenia: **0.1**, dokładność na zbiorze walidacyjnym: **93%**.
+
+Dokładność na zbiorze testowym przy najlepszym współczynniku uczenia: **92%**.
+
+Wizualizacje:
+- Rozkład danych liniowo separowalnych został przedstawiony na wykresach.
+- Granica decyzyjna perceptronu została poprawnie zobrazowana na zbiorze uczącym.
+
+////
+
+Wnioski Końcowe
+
+Perceptron skutecznie klasyfikuje dane liniowo separowalne. Najlepszy współczynnik uczenia został wybrany na podstawie dokładności walidacyjnej. Model osiągnął wysoką dokładność zarówno na zbiorze walidacyjnym, jak i testowym. Optymalizacja parametrów perceptronu pozwala na poprawę jego działania.
+
+Zaproponowany proces analizy i optymalizacji może być użyty jako podstawowy schemat do budowy prostych modeli klasyfikacyjnych.
