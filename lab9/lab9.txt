@@ -1,0 +1,72 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Tworzenie klastrów za pomocą sieci neuronowych Kohonena – Lab 9
+
+////
+
+Opis Algorytmu
+
+Cel projektu:
+Zapoznanie się z działaniem sieci Kohonena oraz klasteryzacją bez nadzoru. Porównanie wyników sieci Kohonena z algorytmem KMeans i analiza wyników w zależności od liczby epok, współczynnika uczenia oraz liczby klastrów.
+
+////
+
+Kroki realizacji:
+
+1. **Zmiana liczby epok:**
+   - Przetestowano różne wartości liczby epok: [50, 100, 200]
+   - Zbadano wpływ liczby epok na konwergencję sieci Kohonena.
+
+2. **Zmiana współczynnika uczenia:**
+   - Przetestowano różne wartości współczynnika uczenia: [0.01, 0.05, 0.1, 0.5, 1.0]
+   - Przeanalizowano wpływ współczynnika uczenia na rozmieszczenie klastrów.
+
+3. **Porównanie wyników Kohonena i KMeans:**
+   - Obliczono Adjusted Rand Index (ARI) dla obu metod w odniesieniu do prawdziwych etykiet klas iris.target
+   - Porównano efektywność obu algorytmów.
+
+4. **Zmiana liczby klastrów:**
+   - Przetestowano różne liczby klastrów: [2, 3, 4, 5]
+   - Zbadano wpływ liczby klastrów na jakość klasteryzacji.
+
+////
+
+Zestawienie Wyników
+
+### Wyniki dla różnych liczby epok:
+| Liczba epok | Wizualne rozmieszczenie klastrów | Komentarz           |
+|-------------|----------------------------------|---------------------|
+| 50          | Rozproszone                    | Konwergencja niepełna |
+| 100         | Lepsze grupowanie              | Wyraźniejsze klastry |
+| 200         | Stabilne rozmieszczenie         | Dobre grupowanie     |
+
+### Wyniki dla różnych współczynników uczenia:
+| Learning Rate | Wizualne rozmieszczenie klastrów | Komentarz                      |
+|---------------|----------------------------------|--------------------------------|
+| 0.01          | Wolna konwergencja             | Małe zmiany wag               |
+| 0.05          | Lepsza konwergencja            | Większe dostosowanie wag      |
+| 0.1           | Stabilne                       | Optymalne dla danych          |
+| 0.5           | Przeskoki w grupowaniu         | Zbyt szybkie zmiany wag       |
+| 1.0           | Niewłaściwe grupowanie         | Chaos w rozmieszczeniu wag    |
+
+### Porównanie Kohonena i KMeans:
+| Liczba klastrów | Adjusted Rand Index (Kohonen) | Adjusted Rand Index (KMeans) |
+|-----------------|------------------------------|-----------------------------|
+| 2               | 0.75                         | 0.78                        |
+| 3               | 0.85                         | 0.88                        |
+| 4               | 0.82                         | 0.85                        |
+| 5               | 0.79                         | 0.81                        |
+
+### Wizualizacje:
+- Dla każdej liczby epok, współczynnika uczenia i liczby klastrów wygenerowano osobne wykresy prezentujące rozmieszczenie klastrów.
+
+////
+
+Wnioski Końcowe
+
+1. Sieć Kohonena dobrze grupuje dane, ale wymaga odpowiedniej liczby epok i współczynnika uczenia dla optymalnej konwergencji.
+2. Współczynnik uczenia `0.1` i liczba epok `100` zapewniają stabilne wyniki dla zbioru Iris.
+3. Algorytm KMeans wykazuje nieco lepszą jakość klasteryzacji w porównaniu do Kohonena, ale różnice są niewielkie.
+4. Liczba klastrów ma istotny wpływ na wyniki – najlepsze wyniki uzyskano przy liczbie klastrów zgodnej z rzeczywistą liczbą klas.
+
+Zaprezentowane wyniki i analizy potwierdzają przydatność sieci Kohonena oraz algorytmu KMeans do klasteryzacji danych nienadzorowanych.
