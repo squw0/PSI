@@ -1,0 +1,82 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Analiza działania algorytmów optymalizacji genetycznej – Lab 3
+
+////
+
+Opis Algorytmu
+ 
+Cel projektu:
+Poznanie i analiza algorytmu genetycznego jako metody optymalizacji. W ramach ćwiczeń zbadano wpływ różnych parametrów (rozmiaru populacji, liczby pokoleń, prawdopodobieństwa mutacji) na jakość i szybkość konwergencji algorytmu.
+
+Algorytm genetyczny:
+1. Losowanie początkowej populacji chromosomów binarnych.
+2. Obliczanie funkcji dopasowania dla każdego chromosomu.
+3. Selekcja rodziców metodą koła ruletki.
+4. Krzyżowanie wybranych rodziców z losowym punktem podziału.
+5. Mutacja potomków z ustalonym prawdopodobieństwem.
+6. Powtarzanie powyższych kroków przez określoną liczbę pokoleń.
+
+////
+
+Kroki realizacji:
+
+1. **Zadanie 1 – Analiza wpływu parametrów (rozmiar populacji, mutacja):**
+   - Przetestowano różne rozmiary populacji `[10, 20, 50]` oraz prawdopodobieństwo mutacji [0.01, 0.05, 0.1]
+   - Wyniki wskazują, że większe populacje lepiej eksplorują przestrzeń rozwiązań
+
+2. **Zadanie 2 – Wpływ prawdopodobieństwa mutacji:**
+   - Przetestowano wartości [0.001, 0.01, 0.05, 0.1, 0.2]
+   - Optymalne wyniki uzyskano dla wartości 0.01, podczas gdy zbyt duże wartości wprowadzały chaos
+
+3. **Zadanie 3 – Analiza małej populacji:**
+   - Uruchomiono algorytm z populacją [2, 3]
+   - Zauważono szybkie wpada w lokalne minima dla małej populacji z powodu niskiej różnorodności genetycznej.
+
+4. **Zadanie 4 – Liczba pokoleń:**
+   - Przetestowano liczby pokoleń [10, 20, 50, 100]
+   - Większa liczba pokoleń poprawia wyniki, ale z czasem korzyści maleją.
+
+////
+
+Zestawienie Wyników
+
+### Rozmiar populacji i mutacja (Zadanie 1):
+| Rozmiar Populacji | Mutacja | Najlepsze f(x) | Komentarz                      |
+|-------------------|---------|----------------|--------------------------------|
+| 10                | 0.01    | 961            | Szybka konwergencja           |
+| 20                | 0.01    | 1024           | Stabilne wyniki               |
+| 50                | 0.01    | 1024           | Najlepsza eksploracja         |
+| 20                | 0.1     | 841            | Niestabilna konwergencja      |
+
+### Wpływ mutacji (Zadanie 2):
+| Mutacja  | Najlepsze f(x) | Komentarz                      |
+|----------|----------------|--------------------------------|
+| 0.001    | 1024           | Wolna konwergencja            |
+| 0.01     | 1024           | Optymalna eksploracja         |
+| 0.1      | 841            | Niestabilne rozwiązania       |
+| 0.2      | 729            | Zbyt chaotyczne rozwiązania   |
+
+### Mała populacja (Zadanie 3):
+| Populacja | Najlepsze f(x) | Komentarz                      |
+|-----------|----------------|--------------------------------|
+| 2         | 625            | Szybka konwergencja lokalna   |
+| 3         | 841            | Lepsza różnorodność niż 2     |
+
+### Liczba pokoleń (Zadanie 4):
+| Pokolenia | Najlepsze f(x) | Komentarz                            |
+|-----------|----------------|--------------------------------      |
+| 10        | 961            | Szybka, ale ograniczona eksploracja  |
+| 50        | 1024           | Stabilna poprawa jakości             |
+| 100       | 1024           | Brak dalszej poprawy                 |
+
+////
+
+Wnioski Końcowe
+
+1. Rozmiar populacji ma kluczowy wpływ na jakość rozwiązań – większe populacje zwiększają różnorodność.
+2. Prawdopodobieństwo mutacji należy dobierać ostrożnie – zbyt wysokie wartości powodują chaos.
+3. Algorytm genetyczny z małą populacją szybko wpada w pułapki lokalnych minimów.
+4. Większa liczba pokoleń poprawia wyniki, ale powyżej pewnego progu korzyści maleją.
+
+Zaprezentowane wyniki potwierdzają skuteczność algorytmu genetycznego w optymalizacji, pod warunkiem odpowiedniego dostrojenia parametrów.
