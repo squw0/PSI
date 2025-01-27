@@ -1,0 +1,84 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Implementacja algorytmu A* – Lab 12
+
+////
+
+Opis Algorytmu
+
+Cel projektu:
+Celem laboratorium było zrozumienie i zaimplementowanie algorytmu A* w różnych scenariuszach, obejmujących różne rozmiary plansz, układy przeszkód oraz punkty początkowe i końcowe.
+
+Algorytm A*:
+1. Korzysta z heurystyki Manhattan, która szacuje odległość między dwoma punktami.
+2. Przechowuje informacje o kosztach dotarcia do węzłów i najlepszych ścieżkach.
+3. Używa otwartej listy priorytetowej (stos kopcowy) do przechowywania potencjalnych punktów trasy.
+4. Znajduje najkrótszą ścieżkę, łącząc elementy BFS i heurystyki.
+
+////
+
+Kroki realizacji:
+
+1. **Zadanie 1 – Plansza 4x4:**
+   - Punkt początkowy: `(0, 0)`.
+   - Punkt końcowy: `(3, 3)`.
+   - Układ przeszkód: prosta plansza z kilkoma barierami.
+
+2. **Zadanie 2 – Plansza 6x6:**
+   - Punkt początkowy: `(0, 0)`.
+   - Punkt końcowy: `(5, 5)`.
+   - Układ przeszkód: bardziej złożony, z większą liczbą przeszkód.
+
+3. **Zadanie 3 – Plansza 5x5:**
+   - Punkt początkowy: `(0, 0)`.
+   - Punkt końcowy: `(4, 4)`.
+   - Układ przeszkód: średnio skomplikowane przeszkody.
+
+4. **Zadanie 4 – Plansza 5x5 z różnymi punktami:**
+   - Start i cel ustalane jako parametry.
+   - Plansza zawiera bardziej dynamiczny układ przeszkód.
+
+5. **Zadanie 5 – Plansza 7x7 z wąskimi przejściami:**
+   - Punkt początkowy: `(0, 0)`.
+   - Punkt końcowy: `(6, 6)`.
+   - Układ przeszkód wymaga precyzyjnej analizy ścieżki.
+
+////
+
+Zestawienie Wyników
+
+### Plansza 4x4 (Zadanie 1):
+| Start | Cel   | Znaleziona ścieżka               |
+|-------|-------|----------------------------------|
+| (0,0) | (3,3) | [(0,0), (0,1), ..., (3,3)]       |
+
+### Plansza 6x6 (Zadanie 2):
+| Start | Cel   | Znaleziona ścieżka               |
+|-------|-------|----------------------------------|
+| (0,0) | (5,5) | [(0,0), (0,1), ..., (5,5)]       |
+
+### Plansza 5x5 (Zadanie 3):
+| Start | Cel   | Znaleziona ścieżka               |
+|-------|-------|----------------------------------|
+| (0,0) | (4,4) | [(0,0), (1,0), ..., (4,4)]       |
+
+### Plansza 5x5 z parametrami (Zadanie 4):
+| Start | Cel   | Znaleziona ścieżka               |
+|-------|-------|----------------------------------|
+| (1,1) | (4,3) | [(1,1), (1,2), ..., (4,3)]       |
+
+### Plansza 7x7 z wąskimi przejściami (Zadanie 5):
+| Start | Cel   | Znaleziona ścieżka               |
+|-------|-------|----------------------------------|
+| (0,0) | (6,6) | [(0,0), (0,1), ..., (6,6)]       |
+
+////
+
+Wnioski Końcowe
+
+1. Algorytm A* skutecznie znajdował najkrótsze ścieżki na planszach o różnych rozmiarach i z różnymi przeszkodami.
+2. Heurystyka Manhattan działa dobrze dla plansz, gdzie ruch jest ograniczony do kierunków poziomych i pionowych.
+3. Wąskie przejścia znacząco wpływają na wydajność algorytmu, wymagając dokładniejszej eksploracji.
+4. Dostosowanie punktów początkowych i końcowych umożliwia dynamiczne dostosowanie algorytmu do różnych scenariuszy.
+
+Przeprowadzone eksperymenty potwierdzają uniwersalność i skuteczność algorytmu A* w znajdowaniu optymalnych ścieżek w środowiskach z przeszkodami.
