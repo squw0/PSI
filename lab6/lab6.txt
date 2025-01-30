@@ -1,0 +1,112 @@
+Imię i nazwisko: Piotr Zawadzki
+
+Nazwa ćwiczenia: Podstawy sztucznej inteligencji – Lab 6
+
+////
+
+Temat: Budowanie elementarnego rozmytego systemu eksperckiego w Pythonie
+
+
+Opis Algorytmu
+ 
+Cel projektu:
+Zapoznanie się z podstawami logiki rozmytej oraz budową prostego rozmytego systemu eksperckiego. System ten symuluje działanie pralki, gdzie na podstawie poziomu brudu (degree_dirt) i rodzaju brudu (type_dirt) określa zalecany czas prania (wash_time).
+
+////
+
+Kroki realizacji:
+
+Definicja zmiennych rozmytych:
+
+Zdefiniowano zmienne wejściowe: degree_dirt (poziom brudu) i type_dirt (rodzaj brudu) oraz zmienną wyjściową wash_time (czas prania).
+
+Dla każdej zmiennej określono funkcje przynależności (trójkątne lub trapezoidalne) oraz ich zakresy.
+
+////
+
+Tworzenie bazy reguł:
+
+Zdefiniowano reguły rozmyte w formie IF-THEN, np.:
+
+Jeśli poziom brudu jest wysoki LUB rodzaj brudu jest tłusty, to czas prania powinien być bardzo długi.
+
+Jeśli poziom brudu jest niski LUB rodzaj brudu jest nietłusty, to czas prania powinien być bardzo krótki.
+
+////
+
+Mechanizm wnioskowania:
+
+Wykorzystano silnik wnioskowania rozmytego do obliczenia zalecanego czasu prania na podstawie wprowadzonych danych wejściowych.
+
+////
+
+Defuzyfikacja:
+
+Wynik rozmyty został przekształcony na wartość ostrą (czas prania w minutach) za pomocą metody centroidowej.
+
+////
+
+Testowanie systemu:
+
+Przeprowadzono eksperymenty z różnymi parametrami funkcji przynależności oraz dodano nowe reguły, aby sprawdzić ich wpływ na wyniki.
+
+Zestawienie Wyników
+Testowanie systemu dla różnych danych wejściowych:
+
+Typ brudu (type_dirt)	Poziom brudu (degree_dirt)	Zalecany czas prania (wash_time)
+    50	                        50	                    31.33 minut
+|---------------|---------------------------------|---------------------|
+    10	                        10	                    28.08 minut
+|---------------|---------------------------------|---------------------|
+    80	                        50	                    33.67 minut
+|---------------|---------------------------------|---------------------|
+    10	                        90	                    31.29 minut
+|---------------|---------------------------------|---------------------|
+
+////
+
+Wpływ zmian parametrów funkcji przynależności:
+
+Zmiana zakresów funkcji przynależności na bardziej precyzyjne (np. very_short = [0, 5, 10]) skutkowała nieznacznym zmniejszeniem zalecanego czasu prania.
+
+Zmiana funkcji przynależności z trójkątnych na trapezoidalne wpłynęła na wyniki, ale różnice były niewielkie (np. dla type_dirt = 50, degree_dirt = 50 wynik wynosił 32.10 minut).
+
+////
+
+Wpływ dodania nowych reguł:
+
+Dodanie reguły rule10: Jeśli poziom brudu jest wysoki I czas prania jest krótki, to czas prania powinien być długi, spowodowało zwiększenie czasu prania w przypadku wysokiego poziomu brudu.
+
+////
+
+Wnioski Końcowe
+
+Efektywność systemu rozmytego:
+
+System rozmyty skutecznie określa zalecany czas prania na podstawie nieprecyzyjnych danych wejściowych.
+
+Wyniki są zgodne z intuicją – im większy poziom brudu lub bardziej tłusty rodzaj brudu, tym dłuższy czas prania.
+
+////
+
+Wpływ parametrów funkcji przynależności:
+
+Zmiana zakresów funkcji przynależności wpływa na wyniki, ale różnice są niewielkie.
+
+Funkcje trapezoidalne mogą być bardziej elastyczne niż trójkątne, ale wymagają starannego doboru parametrów.
+
+////
+
+Dodanie nowych reguł:
+
+Dodanie nowych reguł pozwala na lepsze dostosowanie systemu do bardziej złożonych scenariuszy.
+
+Reguły powinny być jednak starannie przetestowane, aby uniknąć niespójności w wynikach.
+
+////
+
+Możliwości dalszej optymalizacji:
+
+Można rozważyć dodanie większej liczby reguł lub bardziej złożonych funkcji przynależności.
+
+Warto również przetestować system na większej liczbie danych wejściowych, aby ocenić jego stabilność.
